@@ -17,7 +17,7 @@ class TestUserLogin(TestCase):
     @classmethod
     def setUpTestData(cls):
         # FINALLY
-        # this is will runne just one time
+        # this is will run just one time
         print 'FINALLY ONE DATA SETUP'
         cls.user = User.objects.create_user(username=TEST_USER,
                                             email=TEST_EMAIL,
