@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from django.utils import timedelta
 
 
 class Question(models.Model):
@@ -8,7 +7,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - timedelta(days=1)
+        return self.pub_date >= timezone.now() - timezone.timedelta(days=1)
 
 
 class Choice(models.Model):
