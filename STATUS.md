@@ -10,6 +10,7 @@
     - Adding fixtures
     - Django login
     - Django views
+    - Coverage
 
 
 #### TODO:
