@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,13 +42,15 @@ CONTRIB_APPS = [
 
 THIRD_APPS = [
     'django_coverage',
-    'django_nose',
+    # 'django_nose',
 ]
 
 PROJECT_APPS = [
     'first',
     'polls',
 ]
+
+MY_INSTALLED_APPS = PROJECT_APPS
 
 INSTALLED_APPS = CONTRIB_APPS + THIRD_APPS + PROJECT_APPS
 
@@ -90,7 +93,7 @@ WSGI_APPLICATION = 'tdd.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -134,7 +137,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Django Nose
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 # Tell nose to measure coverage on the 'foo' and 'bar' apps
 NOSE_ARGS = [
@@ -142,3 +144,17 @@ NOSE_ARGS = [
     '--cover-package=%s' % ','.join(PROJECT_APPS),
     # '--cover-html'  # create html files
 ]
+
+if 'test' in sys.argv:
+    print "Testing ..."
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+        }
+    }
+
+    PASSWORD_HASHERS = (
+        'django.contrib.auth.hashers.MD5PasswordHasher',
+    )
+
