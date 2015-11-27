@@ -63,8 +63,13 @@ two types throughout your test suite as it is appropriate.
 #### References
 
 [Toast Drive TDD](http://toastdriven.com/blog/2011/apr/10/guide-to-testing-in-django/)
+
 [Django Test](https://docs.djangoproject.com/en/1.8/topics/testing/tools/)
+
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 [Coding Dojo e TDD](https://alextercete.wordpress.com/2009/09/11/apresentacao-sobre-coding-dojo-e-tdd-na-chemtech/)
+
 [DojoPuzzles](http://dojopuzzles.com/problemas/exibe/caixa-eletronico/)
+
 [RealPython TDD with Django](https://realpython.com/blog/python/testing-in-django-part-1-best-practices-and-examples/)
