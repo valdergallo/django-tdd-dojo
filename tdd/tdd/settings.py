@@ -140,4 +140,5 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = [
     '--with-coverage',
     '--cover-package=%s' % ','.join(PROJECT_APPS),
+    # '--cover-html'  # create html files
 ]
