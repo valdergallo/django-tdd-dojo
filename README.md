@@ -77,3 +77,5 @@ two types throughout your test suite as it is appropriate.
 [Python Test Tools](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 
 [TDD Django Tutorial Functional Tests](http://www.tdd-django-tutorial.com/tutorial/1/)
+
+[Django Coverage](https://coverage.readthedocs.org)
