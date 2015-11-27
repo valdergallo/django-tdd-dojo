@@ -73,3 +73,7 @@ two types throughout your test suite as it is appropriate.
 [DojoPuzzles](http://dojopuzzles.com/problemas/exibe/caixa-eletronico/)
 
 [RealPython TDD with Django](https://realpython.com/blog/python/testing-in-django-part-1-best-practices-and-examples/)
+
+[Python Test Tools](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
+
+[TDD Django Tutorial Functional Tests](http://www.tdd-django-tutorial.com/tutorial/1/)
